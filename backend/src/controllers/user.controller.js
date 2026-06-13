@@ -11,9 +11,7 @@ const addUserController = async (req, res) => {
             age,
         })
 
-        res.status(201).json({
-            message: 'User is created Successfully'
-        })
+        res.status(201).json(user)
 
     } catch (error) {
         res.status(500).json({
