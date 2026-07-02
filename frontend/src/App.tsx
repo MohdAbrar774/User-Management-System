@@ -35,7 +35,8 @@ export default function App() {
   return (
     <>
       <div className="page-container">
-        <h1>User Management System - Powered by : Kode-Rocket - An AI PR Reviewer </h1>
+        <h1>User Management System </h1>
+        <h3>  Powered by : Kode-Rocket - An AI PR Reviewer</h3>
 
         <div className="content-wrapper">
           <UserForm onUserAdded={handleUserAdded} />
