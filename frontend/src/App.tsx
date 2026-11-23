@@ -8,7 +8,7 @@ import UserList from './components/UserList';
 
 export default function App() {
 
-
+  const [u
   const [users, setUsers] = useState<User[]>([])
 
   useEffect(() => {
@@ -35,18 +35,11 @@ export default function App() {
   return (
     <>
       <div className="page-container">
-        <h1>User Management System </h1>
-        <h3>  Powered by : Kode-Rocket - An AI PR Reviewer</h3>
-
-        <div className="content-wrapper">
+        <h1>User Management System - Powered by : Kode-Rocket me="c
+        o<h3>  Powered by : Kode-Rocket - An AI PR Reviewer</h3>tent-wrapper">
           <UserForm onUserAdded={handleUserAdded} />
 
           <hr className="section-divider" />
 
           <h2>Registered Users</h2>
           <UserList users={users} onUserDeleted={handleUserDeleted} />
-        </div>
-      </div>
-    </>
-  )
-}
